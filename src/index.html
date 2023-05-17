@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Gallery</h1>
+        <button type="button">Add image +</button>
+    </header>
+    <form>
+        <h2>Insert new image</h2>
+        <input type="url" id="new-img-adress" required placeholder="URL of the image"/>
+        <button type="submit" id="add-btn">Add</button>
+        <button type="reset" id="cancel-btn">Cancel</button>
+    </form>
+    <ul>
+        <li>
+            <img src="./midia/foto1.jpg" alt="cat painting">
+            <div class="overlay-img-link">
+                <a href="./midia/foto1.jpg" title="View full image" target="_blank">
+                    View full image
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./midia/foto2.jpg" alt="flamingo">
+            <div class="overlay-img-link">
+                <a href="./midia/foto2.jpg" title="View full image" target="_blank">
+                    View full image
+                </a>
+            </div>
+        </li>
+        <li>
+            <img src="./midia/foto3.jpg" alt="puppies in a bag">
+            <div class="overlay-img-link">
+                <a href="./midia/foto3.jpg" title="View full image" target="_blank">
+                    View full image
+                </a>
+            </div>
+        </li>
+    </ul>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
